@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login and Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+
+        <form id="login-form" class="form" style="display:block;">
+            <h2>Login</h2   >
+            <div class="input-group">
+                <input type="email" id="login-username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <button type="button" id="login-button">Login</button>
+            <button type="button" id="newUser-button">New User?</button>
+        </form>
+
+        <form id="register-form" class="form" style="display: none;">
+            <h2>Register</h2>
+            <div class="input-group">
+                <input type="text" id="register-first" placeholder="First Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="register-last" placeholder="Last Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="register-email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="register-password" placeholder="Password" required>
+            </div>
+            <button type="button" id="register-button">Register</button>
+            <button type="button" id="oldUser-button">Existing User?</button>
+        </form>
+
+        <div id = "result-section" style="display: none;">
+
+        </div>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
